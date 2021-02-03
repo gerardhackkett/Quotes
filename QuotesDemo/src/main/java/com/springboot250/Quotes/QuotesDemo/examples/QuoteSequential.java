@@ -104,7 +104,7 @@ public class QuoteSequential {
         System.out.println("Has the vehicle been changed from the manufacturers specification? (Yes or No)");
         //changedFromManufacturersSpec = myScanner.nextBoolean();
         String specificationresponse =  myScanner.nextLine();
-        if(specificationresponse=="Yes" || specificationresponse=="yes"){
+        if(specificationresponse.equals("Yes") || specificationresponse.equals("yes")){
             changedFromManufacturersSpec = true;
         }
         else{
@@ -137,7 +137,7 @@ public class QuoteSequential {
         System.out.println("Are you the registered keeper of the vehicle? (Yes/No)");
         //registeredKeeper =  myScanner.nextBoolean();
         String keeperresponse =  myScanner.nextLine();
-        if(keeperresponse=="Yes" || keeperresponse=="yes"){
+        if(keeperresponse.equals("Yes") || keeperresponse.equals("yes")){
             registeredKeeper = true;
         }
         else{
@@ -245,10 +245,10 @@ public class QuoteSequential {
             FileWriter myWriter = new FileWriter("quotedetails.txt");
             myWriter.write("Car Registration\t" + vehicleReg +"\n");
             myWriter.write("Number of seats\t\t" + noOfSeats  +"\n");
-            myWriter.write("Body Style\t\t\t" + bodyStyle +"\n");
-            myWriter.write("Engine CC\t\t\t" + engineCapacity +"\n");
+            myWriter.write("Body Style\t\t" + bodyStyle +"\n");
+            myWriter.write("Engine CC\t\t" + engineCapacity +"\n");
             myWriter.write("Value of vehicle\t" + marketValue +"\n");
-            myWriter.write("Quotation\t\t\t" + quote +"\n");
+            myWriter.write("Quotation\t\t" + quote +"\n");
             myWriter.close();
             System.out.println("******************** WRITE DATA TO A TEXT FILE ********************");
             System.out.println("Successfully wrote to the file.");
