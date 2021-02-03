@@ -1,0 +1,6 @@
+Car Registration	LA42ABC
+Number of seats		2
+Body Style			Coupe
+Engine CC			1000
+Value of vehicle	90000.0
+Quotation			180.0
